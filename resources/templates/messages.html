@@ -1,9 +1,24 @@
 <html>
 <body>
 
+<form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
+
 <form action="/create-message" method="post">
     <input type="text" placeholder="Enter a message" name="enteredMessage"/>
     <button type="submit">Submit</button>
+</form>
+
+<form action="/delete-message" method="post">
+    <input type="number" placeholder="Message Number" name="messageId">
+    <button type="submit">Delete</button>
+</form>
+
+<form action="/edit-message" method="post">
+    <input type="number" placeholder="Message Number" name="messageId">
+    <input type="text" placeholder="Enter New Text" name="newMessage">
+    <button type="submit">Edit</button>
 </form>
 
 Messages by {{name}}: <br>
